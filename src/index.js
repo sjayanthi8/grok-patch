@@ -1,8 +1,7 @@
-const message = 'Hello World'
+const message = "Hello World";
 
 function greet() {
-  let unused = 'test'
-  console.log(message)
+  console.log(message);
 }
 
-greet()
+greet();
