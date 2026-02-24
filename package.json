@@ -1,0 +1,33 @@
+{
+  "name": "grok-patch-sample",
+  "version": "1.0.0",
+  "description": "Sample repo for demonstrating linting workflow",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"],
+      "no-unused-vars": "error"
+    }
+  }
+}
