@@ -13,6 +13,9 @@
     "eslint-config-prettier": "^9.1.0",
     "jest": "^30.2.0"
   },
+  "overrides": {
+    "yargs-parser": "21.1.0"
+  },
   "eslintConfig": {
     "env": {
       "es2021": true,
