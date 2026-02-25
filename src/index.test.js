@@ -2,7 +2,7 @@ const { greet, getVersion } = require("./index");
 
 describe("Grok Patch Module", () => {
   test("getVersion() should return package version", () => {
-    expect(getVersion()).toBe("1.0.0");
+    expect(getVersion()).toBe("2.0.0"); // deliberate failure for demo
   });
 
   test("greet() should log the hello message (mocked)", () => {
