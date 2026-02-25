@@ -1,5 +1,5 @@
 const message = "Hello World";
-const version = "1.0.0";
+const version = "1.0.1"; // synced with package.json for CI demo
 
 function greet() {
   console.log(message);
