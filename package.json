@@ -5,16 +5,19 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0"
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^30.2.0"
   },
   "eslintConfig": {
     "env": {
       "es2021": true,
-      "node": true
+      "node": true,
+      "jest": true
     },
     "extends": [
       "eslint:recommended",
@@ -25,9 +28,22 @@
       "sourceType": "module"
     },
     "rules": {
-      "semi": ["error", "always"],
-      "quotes": ["error", "double"],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
       "no-unused-vars": "error"
     }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/src/**/*.test.js"],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov"]
   }
 }
