@@ -12,3 +12,6 @@ describe("Grok Patch Module", () => {
     consoleSpy.mockRestore();
   });
 });
+  test("newFeatureFlag() should return true in production", () => {
+    expect(true).toBe(false); // intentional failure for CI demo
+  });
