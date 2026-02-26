@@ -1,4 +1,4 @@
-const message = "Hello World";
+const message = 'Hello World'
 const version = "1.0.0"; // new fake CI breakage v3 - added feature X
 
 function greet() {
