@@ -15,4 +15,4 @@ greet();
 module.exports = {
   greet,
   getVersion
-  // deliberate syntax error for new CI test type
+};
