@@ -9,10 +9,15 @@ function getVersion() {
   return version;
 }
 
+function newFeatureFlag() {
+  return true; // feature enabled for PR demo
+}
+
 console.log(`Grok Patch v${getVersion()}`);
 greet();
 
 module.exports = {
   greet,
-  getVersion
+  getVersion,
+  newFeatureFlag
 };

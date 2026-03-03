@@ -1,4 +1,4 @@
-const { greet, getVersion } = require("./index");
+const { greet, getVersion, newFeatureFlag } = require("./index");
 
 describe("Grok Patch Module", () => {
   test("getVersion() should return package version", () => {
@@ -13,5 +13,5 @@ describe("Grok Patch Module", () => {
   });
 });
   test("newFeatureFlag() should return true in production", () => {
-    expect(true).toBe(false); // intentional failure for CI demo
+    expect(newFeatureFlag()).toBe(true);
   });
