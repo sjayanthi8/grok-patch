@@ -1,4 +1,4 @@
-const { greet, getVersion, newFeatureFlag } = require("./index");
+const { greet, getVersion, newFeatureFlag, calculateSum } = require("./index");
 
 describe("Grok Patch Module", () => {
   test("getVersion() should return package version", () => {
@@ -10,6 +10,11 @@ describe("Grok Patch Module", () => {
     greet();
     expect(consoleSpy).toHaveBeenCalledWith("Hello World");
     consoleSpy.mockRestore();
+  });
+
+  test("calculateSum() should add two numbers correctly", () => {
+    expect(calculateSum(2, 3)).toBe(5);
+    expect(calculateSum(-1, 1)).toBe(0);
   });
 });
   test("newFeatureFlag() should return true in production", () => {

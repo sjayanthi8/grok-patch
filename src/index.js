@@ -13,11 +13,16 @@ function newFeatureFlag() {
   return true; // feature enabled for PR demo
 }
 
+function calculateSum(a, b) {
+  return a + b; // new utility function for PR demo
+}
+
 console.log(`Grok Patch v${getVersion()}`);
 greet();
 
 module.exports = {
   greet,
   getVersion,
-  newFeatureFlag
+  newFeatureFlag,
+  calculateSum
 };
