@@ -14,7 +14,8 @@ function newFeatureFlag() {
 }
 
 function calculateSum(a, b) {
-  return a + b; // new utility function for PR demo
+  const badStyle = 'single quotes are not allowed';
+  return a + b // missing semicolon + unused var
 }
 
 console.log(`Grok Patch v${getVersion()}`);
