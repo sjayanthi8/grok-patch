@@ -1,5 +1,5 @@
 const message = "Hello World";
-const version = "1.0.0"; // new fake CI breakage v3 - added feature X
+const version = "2.0.0"; // fake CI breakage for new PR demo - test will fail
 
 function greet() {
   console.log(message);
